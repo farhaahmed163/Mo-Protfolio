@@ -1,0 +1,595 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #f4f4f4;
+  --accent-color: #1c1c1c;
+  --low-contrast-color: #898989;
+  --shadow-color: rgb(74 74 74 / 36%);
+  --box-shadow: 0px 0px 10px 0px #a8a6a044;
+  --heading-font: "Montserrat", sans-serif;
+  --subheading-font: "Poppins", sans-serif;
+  --paragraph-font: "Poppins", sans-serif;
+  --animation-duration: 400ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  padding: 0;
+  margin: 0;
+  color: var(--accent-color);
+}
+
+body p {
+  font-family: var(--paragraph-font);
+  color: var(--low-contrast-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+.main-heading {
+  margin-bottom: 80px;
+}
+
+.main-heading h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+}
+.main-heading h3:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    z-index: -1;
+  }
+
+.sec-padding {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.bg-sec {
+  background-color: var(--secondary-color);
+}
+
+/* NNNNNNAAAAAAAAAAVVVVVVVVVVV */
+
+nav {
+  background-color: var(--primary-color);
+  font-family: var(--paragraph-font);
+  font-size: 14px;
+  padding-block: 40px;
+  box-shadow: var(--box-shadow);
+}
+
+nav .nav-item {
+  padding-inline: 10px;
+}
+
+nav .navbar-brand {
+  color: var(--accent-color);
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--accent-color);
+  position: relative;
+  
+}
+
+
+.navbar-nav .nav-link {
+  color: var(--accent-color) !important;
+}
+
+.navbar-nav .nav-link.active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+/* HHHHHHHHOOOOOOOOOOOMMMMMMMMMEEEE */
+
+#home {
+  background-image: url(../imgs/bg.jpg);
+  height: 100vh;
+
+  position: relative;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.bg-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#home .heading h5 {
+  font-size: 50px;
+  font-weight: 800;
+}
+#home .heading h1::after {
+  content: "|";
+  animation-name: typing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  font-weight: 600;
+}
+
+@keyframes typing {
+  2% {
+    content: "|";
+  }
+  4% {
+    content: "W|";
+  }
+  6% {
+    content: "We|";
+  }
+  8% {
+    content: "Web|";
+  }
+  10% {
+    content: "Web De|";
+  }
+  12% {
+    content: "Web Deve|";
+  }
+  14% {
+    content: "Web Develo|";
+  }
+  16% {
+    content: "Web Develope|";
+  }
+  18% {
+    content: "Web Developer|";
+  }
+  20% {
+    content: "Web Developer|";
+  }
+  22% {
+    content: "Web Developer|";
+  }
+  24% {
+    content: "Web Developer|";
+  }
+  26% {
+    content: "Web Develope|";
+  }
+  28% {
+    content: "Web Develo|";
+  }
+  30% {
+    content: "Web Deve|";
+  }
+  32% {
+    content: "Web De|";
+  }
+  34% {
+    content: "Web|";
+  }
+  36% {
+    content: "We|";
+  }
+  38% {
+    content: "W|";
+  }
+  40% {
+    content: "|";
+  }
+  42% {
+    content: "P|";
+  }
+  44% {
+    content: "Pr|";
+  }
+  46% {
+    content: "Pro|";
+  }
+  48% {
+    content: "Prod|";
+  }
+  50% {
+    content: "Produ|";
+  }
+  52% {
+    content: "Product|";
+  }
+  54% {
+    content: "Product D|";
+  }
+  56% {
+    content: "Product De|";
+  }
+  58% {
+    content: "Product Des|";
+  }
+  60% {
+    content: "Product Desi|";
+  }
+  62% {
+    content: "Product Design|";
+  }
+  64% {
+    content: "Product Designe|";
+  }
+  68% {
+    content: "Product Designer|";
+  }
+  70% {
+    content: "Product Designer|";
+  }
+  72% {
+    content: "Product Designer|";
+  }
+  74% {
+    content: "Product Designer|";
+  }
+  76% {
+    content: "Product Designe|";
+  }
+  78% {
+    content: "Product Design|";
+  }
+  80% {
+    content: "Product Desig|";
+  }
+  82% {
+    content: "Product Desi|";
+  }
+  84% {
+    content: "Product Des|";
+  }
+  86% {
+    content: "Product D|";
+  }
+  88% {
+    content: "Product|";
+  }
+  90% {
+    content: "Produc|";
+  }
+  92% {
+    content: "Produ|";
+  }
+  94% {
+    content: "Prod|";
+  }
+  96% {
+    content: "Pro|";
+  }
+  98% {
+    content: "Pr|";
+  }
+  99% {
+    content: "P|";
+  }
+  100% {
+    content: "|";
+  }
+}
+
+#home .link-icon span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  margin: 4px;
+}
+
+/* AAAAAAAAABBBBBOOOOOOOUUUUUTTTT */
+
+#about {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+#about h3 {
+  font-weight: 800;
+}
+
+#about .skill-level .level-bar {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4px 8px;
+  box-shadow: inset var(--box-shadow);
+}
+#about .skill-level .level-bar span {
+  height: 100%;
+  background-color: var(--accent-color);
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#about .buttons .btn-prim {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 30px;
+  border: solid 1px var(--accent-color);
+  border-radius: 5px;
+  transition: all var(--animation-duration);
+}
+
+#about .buttons .btn-prim:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
+
+#about .buttons .btn-sec {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+/* SSSSEEEEERRRRVVVVIIICCCEEESSSS */
+#services {
+  background-color: var(--secondary-color);
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.serv-item {
+  background-color: var(--primary-color);
+  padding: 50px 30px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  transition: all var(--animation-duration);
+}
+.serv-item i {
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  transition: all var(--animation-duration);
+}
+
+.serv-item:hover i {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+/* PPPOOOORRRTTTFFFOOOLLLIIIOOOO */
+
+#portfolio .img-overlay {
+  position: absolute;
+  bottom: 5px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transition: all var(--animation-duration);
+  transform: translateY(16px);
+}
+
+#portfolio .img-overlay:hover {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#portfolio .content i {
+  height: 30px;
+  width: 30px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  margin: 2px;
+  transition: all var(--animation-duration);
+}
+
+#portfolio .content i:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+#portfolio .content h6 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  position: relative;
+  transform: translateY(16px);
+  transition: all var(--animation-duration);
+}
+#portfolio .img-overlay:hover h6 {
+  transform: translateY(0px);
+}
+
+#portfolio .nav-underline .nav-link {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-family: var(--subheading-font);
+  margin-inline: 5px;
+}
+
+/* TTTEEEESSSTTTIIIIMMOOONNNIIIAALLLSSS */
+
+#testimonials .custom-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+#testimonials span {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--low-contrast-color);
+}
+#testimonials .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: #1c1c1c;
+}
+
+/* CCCCCCOOOOOOUUUUUUUUUNNNNNNTTTTTTTTEEEEEEERRRRR */
+
+.counter-padding {
+  padding-block: 100px;
+}
+
+#counter .counter-item i {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+#counter .counter-item h3 {
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+#counter .counter-item p {
+  font-weight: 600;
+}
+
+/* TTTTEEEEEEEEEEEEAAAAAAAAAAAMMMMMMM */
+
+#team .team-card .team-caption {
+  background-color: var(--accent-color);
+}
+
+#team .team-card .team-caption h4 {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+#team .team-card .team-caption h6 {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+#team .team-card .team-overlay {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+  left: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(0.5) rotateY(180deg);
+  opacity: 0;
+  transition: all var(--animation-duration);
+}
+
+#team .team-card:hover .team-overlay {
+  transform: scale(1) rotateY(0);
+  opacity: 1;
+}
+
+#team .team-card .team-img img {
+  transition: all var(--animation-duration);
+  transform: scale(1.05);
+}
+#team .team-card .team-img:hover img {
+  transform: scale(1.2);
+}
+
+#team .team-card .team-overlay i {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 1.2rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  margin: 2px;
+  transition: all var(--animation-duration);
+}
+
+#team .team-card .team-overlay i:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+/* FFFFFFFFFOOOOOOORRRRMMMMM */
+
+#contact i {
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  background-color: var(--secondary-color);
+  transition: all var(--animation-duration);
+}
+
+#contact .info-card:hover i {
+  transition: all 500ms ease;
+  color: white;
+  background-color: black;
+}
+.custom-input input {
+  background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+.custom-msg {
+  background: var(--secondary-color);
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 220px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact .btn-custom {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 30px;
+  border: solid 1px var(--accent-color);
+  border-radius: 5px;
+  transition: all var(--animation-duration);
+}
+
+#contact .btn-custom:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
+
+
+
+/* FFFFFFOOOOOTTTEEERRR */
+
+footer {
+  background-color: var(--accent-color);
+}
+footer p {
+  font-size: 13px;
+}
